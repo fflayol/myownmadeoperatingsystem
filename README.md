@@ -9,9 +9,9 @@ Download the latest version of VirtualBox at the following adress: https://www.v
 Click on the file you've just dowloaded and follow the instruction
 
 #### Installing Virtual Machine
-Download image
-Starting
+Follow the instruction on the link below:
 
+![alt text](https://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/)
 #### Installing Qemu
 Quemu is a software that will simulate any machine or processor.
 >	sudo apt-get install qemu
@@ -41,6 +41,7 @@ Then type:
 		
 	
 Normally you might see a window which print Hello World ! Congratulation 
+![alt text](/code/chapter1/img/img1.jpg "Qemu Ex1")
 >		[ORG 0x7c00]
 >		   xor ax, ax 
 >		   mov ds, ax 
@@ -84,7 +85,9 @@ Call a function (we will see later what is an interuption) to print the characte
 
 ***
 
-
-starting qemu
  
 ###  Conclusion
+We installed qemu and booted the very first step of our operating system. In the following chapter we will present the architecture and memory of Intel porcessor.
+
+
+# Chapter 2 #
