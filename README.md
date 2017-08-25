@@ -86,8 +86,15 @@ Call a function (we will see later what is an interuption) to print the characte
 ***
 
  
-###  Conclusion
+### Conclusion
 We installed qemu and booted the very first step of our operating system. In the following chapter we will present the architecture and memory of Intel porcessor.
 
+---
 
 # Chapter 2 #
+### Introduction
+During this course we will focuse on Intel Processor (especilally Pentium).
+### Processor
+### Memory
+![alt text](/code/chapter2/img/img1.png "Architecture")
+
