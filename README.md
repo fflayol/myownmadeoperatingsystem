@@ -125,5 +125,5 @@ Hereafter the detail of the Pentium Processor
 Real mode, also called real address mode, is an operating mode of all x86-compatible CPUs. 
 Real mode is characterized by a 20-bit segmented memory address space (giving exactly 1 MiB of addressable memory) 
 and unlimited direct software access to all addressable memory, I/O addresses and peripheral hardware. Real mode provides no support for memory protection, multitasking, or code privilege levels.
-
 All x86 CPUs start in real mode when reset
+You can not access directly to 
