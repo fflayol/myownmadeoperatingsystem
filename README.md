@@ -92,9 +92,9 @@ We installed qemu and booted the very first step of our operating system. In the
 ---
 
 # Chapter 2 #
-### Introduction
+## Introduction
 During this course we will focuse on Intel Processor (especilally Pentium).
-### Processor
+## Processor
 Hereafter the detail of the Pentium Processor
 ![alt text](/code/chapter2/img/img1.png "Architecture")
 
@@ -120,5 +120,5 @@ Hereafter the detail of the Pentium Processor
     GS: Extra data #3
 
 
-### Memory
+## Memory
 
