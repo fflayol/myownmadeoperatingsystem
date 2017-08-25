@@ -95,6 +95,30 @@ We installed qemu and booted the very first step of our operating system. In the
 ### Introduction
 During this course we will focuse on Intel Processor (especilally Pentium).
 ### Processor
-### Memory
+Hereafter the detail of the Pentium Processor
 ![alt text](/code/chapter2/img/img1.png "Architecture")
+
+
+### Operator registers
+    AL/AH/AX/EAX/RAX: Accumulator
+    BL/BH/BX/EBX/RBX: Base index (for use with arrays)
+    CL/CH/CX/ECX/RCX: Counter (for use with loops and strings)
+    DL/DH/DX/EDX/RDX: Extend the precision of the accumulator (e.g. combine 32-bit EAX and EDX for 64-bit integer operations in 32-bit code)
+    SI/ESI/RSI: Source index for string operations.
+    DI/EDI/RDI: Destination index for string operations.
+    SP/ESP/RSP: Stack pointer for top address of the stack.
+    BP/EBP/RBP: Stack base pointer for holding the address of the current stack frame.
+    IP/EIP/RIP: Instruction pointer. Holds the program counter, the current instruction address.
+
+### Segment registers:
+
+    CS: Code
+    DS: Data
+    SS: Stack
+    ES: Extra data
+    FS: Extra data #2
+    GS: Extra data #3
+
+
+### Memory
 
