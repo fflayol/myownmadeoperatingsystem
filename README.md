@@ -100,25 +100,30 @@ Hereafter the detail of the Pentium Processor
 
 
 ### Operator registers
-    AL/AH/AX/EAX/RAX: Accumulator
-    BL/BH/BX/EBX/RBX: Base index (for use with arrays)
-    CL/CH/CX/ECX/RCX: Counter (for use with loops and strings)
-    DL/DH/DX/EDX/RDX: Extend the precision of the accumulator (e.g. combine 32-bit EAX and EDX for 64-bit integer operations in 32-bit code)
-    SI/ESI/RSI: Source index for string operations.
-    DI/EDI/RDI: Destination index for string operations.
-    SP/ESP/RSP: Stack pointer for top address of the stack.
-    BP/EBP/RBP: Stack base pointer for holding the address of the current stack frame.
-    IP/EIP/RIP: Instruction pointer. Holds the program counter, the current instruction address.
-
+    *AL/AH/AX/EAX/RAX: Accumulator
+    *BL/BH/BX/EBX/RBX: Base index (for use with arrays)
+    *CL/CH/CX/ECX/RCX: Counter (for use with loops and strings)
+    *DL/DH/DX/EDX/RDX: Extend the precision of the accumulator 
+    *SI/ESI/RSI: Source index for string operations.
+    *DI/EDI/RDI: Destination index for string operations.
+    *SP/ESP/RSP: Stack pointer for top address of the stack.
+    *BP/EBP/RBP: Stack base pointer for holding the address of the current stack frame.
+    *IP/EIP/RIP: Instruction pointer. Holds the program counter, the current instruction address.
+    *R8-R16 64 bits registers for any usage
+    
 ### Segment registers:
 
-    CS: Code
-    DS: Data
-    SS: Stack
-    ES: Extra data
-    FS: Extra data #2
-    GS: Extra data #3
+    *CS: Code
+    *DS: Data
+    *SS: Stack
+    *ES: Extra data
+    *FS: Extra data #2
+    *GS: Extra data #3
 
 
 ## Memory
+Real mode, also called real address mode, is an operating mode of all x86-compatible CPUs. 
+Real mode is characterized by a 20-bit segmented memory address space (giving exactly 1 MiB of addressable memory) 
+and unlimited direct software access to all addressable memory, I/O addresses and peripheral hardware. Real mode provides no support for memory protection, multitasking, or code privilege levels.
 
+All x86 CPUs start in real mode when reset
