@@ -93,7 +93,7 @@ We installed qemu and booted the very first step of our operating system. In the
 
 # Chapter 2 #
 ## Introduction
-During this course we will focuse on Intel Processor (especilally Pentium).
+During this course we will focus on Intel Processor (especially Pentium).
 ## Processor
 Hereafter the detail of the Pentium Processor
 ![alt text](/code/chapter2/img/img1.png "Architecture")
@@ -110,6 +110,16 @@ Hereafter the detail of the Pentium Processor
     *BP/EBP/RBP: Stack base pointer for holding the address of the current stack frame.
     *IP/EIP/RIP: Instruction pointer. Holds the program counter, the current instruction address.
     *R8-R16 64 bits registers for any usage
+
+
+
+## Memory
+The Pentium has different memory mode. The first mode (which is the historicaly the first) is called 'real mode'
+Real mode is characterized by a 20-bit segmented memory address space (giving exactly 1 MiB of addressable memory) and unlimited direct software access to all addressable memory, I/O addresses and peripheral hardware. Real mode provides no support for memory protection, multitasking, or code privilege levels.
+All x86 CPUs start in real mode when reset or starting.
+In this mode the memory is divided in segments of 65535 bytes (64 Ko or 0000 to FFFF). To simplify we can say that the segment is a piece of memory and the offset is the box inside it. 
+The segments have also a big limitation they are multiple of 16.  To find the linear adress the calculus is the following: PhysicalAddress = Segment * 16 + Offset
+
     
 ### Segment registers:
 
@@ -120,10 +130,7 @@ Hereafter the detail of the Pentium Processor
     *FS: Extra data #2
     *GS: Extra data #3
 
-
-## Memory
-Real mode, also called real address mode, is an operating mode of all x86-compatible CPUs. 
-Real mode is characterized by a 20-bit segmented memory address space (giving exactly 1 MiB of addressable memory) 
-and unlimited direct software access to all addressable memory, I/O addresses and peripheral hardware. Real mode provides no support for memory protection, multitasking, or code privilege levels.
-All x86 CPUs start in real mode when reset
-You can not access directly to 
+# Chapter 3 #
+As we know a little bit more on processor we can start now to create useful functions that we will use a lot.
+## Cleaning the screen  ##
+## Memory manipulation ##
